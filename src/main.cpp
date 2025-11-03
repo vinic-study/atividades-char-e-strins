@@ -62,8 +62,7 @@ void atividade2() {
   int tempCelsius = numberString.toInt();
   float tempFahrenheit = (tempCelsius * 9.0 / 5.0) + 32.0;
 
-  Serial.print("Mensagem Original: ");
-  Serial.println(mensagem);
+  Serial.printf("Mensagem Original: %s", mensagem);
   Serial.print("Número Extraído: ");
   Serial.println(numberString);
   Serial.print("Valor em Celsius: ");
