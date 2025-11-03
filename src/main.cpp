@@ -32,7 +32,7 @@ void loop() {
 void atividade1() {
   if (Serial.available() > 0) {
     String texto = Serial.readStringUntil('\n');
-    texto.trim();
+    texto.trim(); 
 
     if (texto.length() > 0) {
       if (texto.endsWith("ON")) {
@@ -110,7 +110,8 @@ void atividade4() {
     firstLetter.toUpperCase(); 
     
     String restOfSentence = message.substring(1);
-    
+    restOfSentence.toLowerCase();
+
     message = firstLetter + restOfSentence;
   }
   Serial.print("Primeira Maiúscula: ");
